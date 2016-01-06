@@ -20,7 +20,8 @@ use File::Remove ();
 #####################################################################
 # Set up for the test
 
-my $in = catdir( curdir(), 't' );
+my $in = catdir( curdir(), 't', "04_can_delete-t.tmp" );
+mkdir($in);
 ok( -d $in, 'Found t dir' );
 my $d1 = catdir( $in, 'd1' );
 my $d2 = catdir( $d1, 'd2' );

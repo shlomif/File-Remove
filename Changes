@@ -1,5 +1,12 @@
 Revision history for Perl extension File-Remove
 
+1.53    Unknown
+    - Convert the distribution from Module-Install to Dist-Zilla.
+        - Module-Install is undermaintained and unloved.
+    - Fix a problem running the tests in parallel.
+        - https://rt.cpan.org/Public/Bug/Display.html?id=90183
+        - Thanks to ETHER, RJBS, and KENTNL for the report and the analysis.
+
 1.52 Mon 19 Mar 2012 - Adam Kennedy
 	- No functional changes
 	- Updating Module::Install to 1.06
@@ -98,7 +105,7 @@ Revision history for Perl extension File-Remove
 0.34 Mon Nov 6 2006   (Jesse Vincent)
 	- Update t/03 to skip the "is this file not writable" test when
 	  it would fail because the tests are being run by root (as sometimes
-	  happens when installing Perl modules). 
+	  happens when installing Perl modules).
 
 0.33 Tue 24 Oct 2006
 	- Previous release tested ok.
