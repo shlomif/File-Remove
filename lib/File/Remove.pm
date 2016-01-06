@@ -354,6 +354,14 @@ will be called with the filenames that are to be deleted.
 
 =back
 
+=head2 expand
+
+B<DO NOT USE.> Kept for legacy.
+
+=head2 undelete
+
+B<DO NOT USE.> Kept for legacy.
+
 =head1 SUPPORT
 
 Bugs should always be submitted via the CPAN bug tracker
