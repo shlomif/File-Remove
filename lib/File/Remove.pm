@@ -281,7 +281,7 @@ File::Remove - Remove files and directories
     remove( '*.c', '*.pl' );
 
     # removes (with recursion) several directories
-    remove( \1, qw{directory1 directory2} ); 
+    remove( \1, qw{directory1 directory2} );
 
     # removes (with recursion) several files and directories
     remove( \1, qw{file1 file2 directory1 *~} );
