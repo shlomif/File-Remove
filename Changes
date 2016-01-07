@@ -6,6 +6,8 @@ Revision history for Perl extension File-Remove
     - Fix a problem running the tests in parallel.
         - https://rt.cpan.org/Public/Bug/Display.html?id=90183
         - Thanks to ETHER, RJBS, and KENTNL for the report and the analysis.
+    - Removed trailing whitespace and \r-s.
+        - The \r-s confused Dist-Zilla abstract extraction.
 
 1.52    2012-03-19 - Adam Kennedy
 	- No functional changes
