@@ -1,5 +1,10 @@
 Revision history for Perl extension File-Remove
 
+1.54    Unknown
+    - Fix a typo in the documentation:
+        - https://rt.cpan.org/Ticket/Display.html?id=72010
+        - Thanks to DFH, and dsteinbrunner for the report.
+
 1.53    2016-01-10 - Shlomi Fish
     - Convert the distribution from Module-Install to Dist-Zilla.
         - Module-Install is undermaintained and unloved.

@@ -306,7 +306,7 @@ hashref.
 
 Removes files and directories.  Directories are removed recursively like
 in B<rm -rf> if the first argument is a reference to a scalar that
-evaluates to true.  If the first arguemnt is a reference to a scalar
+evaluates to true.  If the first argument is a reference to a scalar,
 then it is used as the value of the recursive flag.  By default it's
 false so only pass \1 to it.
 
