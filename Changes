@@ -1,6 +1,6 @@
 Revision history for Perl extension File-Remove
 
-1.53    Unknown
+1.53    2016-01-10 - Shlomi Fish
     - Convert the distribution from Module-Install to Dist-Zilla.
         - Module-Install is undermaintained and unloved.
     - Fix a problem running the tests in parallel.
@@ -24,7 +24,7 @@ Revision history for Perl extension File-Remove
 	- Adding a second skip for the known-bad cygwin file permissions problem
 
 1.49    2011-03-14 - Adam Kennedy
-	- Restoring 02_directoreis to no_plan as it runs different test counts
+	- Restoring 02_directories to no_plan as it runs different test counts
 	  on different systems.
 
 1.48    2011-03-11 - Adam Kennedy
