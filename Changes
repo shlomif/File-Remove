@@ -4,6 +4,7 @@ Revision history for Perl extension File-Remove
     - Fix a typo in the documentation:
         - https://rt.cpan.org/Ticket/Display.html?id=72010
         - Thanks to DFH, and dsteinbrunner for the report.
+    - Hopefully fix the GitHub remote to make it more MetaCPAN-friendly.
 
 1.53    2016-01-10 - Shlomi Fish
     - Convert the distribution from Module-Install to Dist-Zilla.
@@ -11,6 +12,8 @@ Revision history for Perl extension File-Remove
     - Fix a problem running the tests in parallel.
         - https://rt.cpan.org/Public/Bug/Display.html?id=90183
         - Thanks to ETHER, RJBS, and KENTNL for the report and the analysis.
+        - Earlier report by EDENC - thanks as well.
+            - https://rt.cpan.org/Ticket/Display.html?id=71779
     - Removed trailing whitespace and \r-s.
         - The \r-s confused Dist-Zilla abstract extraction.
 
