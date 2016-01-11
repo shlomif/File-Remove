@@ -1,5 +1,10 @@
 Revision history for Perl extension File-Remove
 
+1.55    2016-01-11 - Shlomi Fish
+    - Add the "{ glob => 0 }" option to remove().
+        - See https://rt.cpan.org/Ticket/Display.html?id=78405
+        - Thanks to SHARYANTO for the request.
+
 1.54    2016-01-10 - Shlomi Fish
     - Fix a typo in the documentation:
         - https://rt.cpan.org/Ticket/Display.html?id=72010

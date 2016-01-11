@@ -74,7 +74,8 @@ END {
 # default
 sub remove (@) {
 	my $recursive = (ref $_[0] eq 'SCALAR') ? shift : \0;
-	my @files     = expand(@_);
+    my $opts = (ref $_[0] eq 'HASH') ? shift : { glob => 1 };
+	my @files     = _expand_with_opts ($opts, @_);
 
 	# Iterate over the files
 	my @removes;
@@ -223,6 +224,11 @@ sub undelete (@) {
 ######################################################################
 # Support Functions
 
+sub _expand_with_opts {
+    my $opts = shift;
+    return ($opts->{glob} ? expand(@_) : @_);
+}
+
 sub expand (@) {
 	map { -e $_ ? $_ : File::Glob::bsd_glob($_) } @_;
 }
@@ -286,6 +292,9 @@ File::Remove - Remove files and directories
     # removes (with recursion) several files and directories
     remove( \1, qw{file1 file2 directory1 *~} );
 
+    # removes without globbing:
+    remove( \1, {glob => 0}, '*');
+
     # trashes (with support for undeleting later) several files
     trash( '*~' );
 
@@ -309,6 +318,15 @@ in B<rm -rf> if the first argument is a reference to a scalar that
 evaluates to true.  If the first argument is a reference to a scalar,
 then it is used as the value of the recursive flag.  By default it's
 false so only pass \1 to it.
+
+If the next argument is a hash reference then it is a key/values of options.
+Currently, there is one supported option of C<<< 'glob' => 0 >>> which prevents
+globbing. E.g:
+
+    remove(\1, {glob => 0}, '*');
+
+Will not remove files globbed by '*' and will only remove the file
+called asterisk if it exists.
 
 In list context it returns a list of files/directories removed, in
 scalar context it returns the number of files/directories removed.  The
