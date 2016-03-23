@@ -1,5 +1,12 @@
 Revision history for Perl extension File-Remove
 
+1.56    2016-03-23 - Shlomi Fish
+    - Remove the Build.PL so there won't be two build files.
+        - https://github.com/shlomif/File-Remove/pull/1
+        - I think it doesn't matter too much with Dist-Zilla, but to avoid
+        future complaints, I decided to comply with the request.
+        - Thanks to Karen Etheridge (ETHER) for the report.
+
 1.55    2016-01-11 - Shlomi Fish
     - Add the "{ glob => 0 }" option to remove().
         - See https://rt.cpan.org/Ticket/Display.html?id=78405
