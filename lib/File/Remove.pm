@@ -395,6 +395,10 @@ Adam Kennedy E<lt>adamk@cpan.orgE<gt>
 
 =head1 COPYRIGHT
 
+Taken over by Shlomi Fish (L<http://www.shlomifish.org/>) while disclaiming
+all rights and placing his modifications under
+CC0/public-domain/MIT/any-other-licence.
+
 Some parts copyright 2006 - 2012 Adam Kennedy.
 
 Taken over by Adam Kennedy E<lt>adamk@cpan.orgE<gt> to fix the
