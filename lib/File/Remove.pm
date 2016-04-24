@@ -2,6 +2,7 @@ package File::Remove;
 
 use 5.00503;
 use strict;
+use warnings;
 
 use vars qw{ $VERSION @ISA @EXPORT_OK };
 use vars qw{ $DEBUG $unlink $rmdir    };
