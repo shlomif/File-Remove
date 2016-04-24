@@ -1,5 +1,9 @@
 Revision history for Perl extension File-Remove
 
+1.57    2016-04-24 - Shlomi Fish
+    - Correct the copyright holder and year.
+    - Add a test for Kwalitee and 'use warnings'.
+
 1.56    2016-03-23 - Shlomi Fish
     - Remove the Build.PL so there won't be two build files.
         - https://github.com/shlomif/File-Remove/pull/1
