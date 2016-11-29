@@ -4,10 +4,12 @@ use 5.00503;
 use strict;
 use warnings;
 
-use vars qw{ $VERSION @ISA @EXPORT_OK };
+use vars qw{ @ISA @EXPORT_OK };
 use vars qw{ $DEBUG $unlink $rmdir    };
+
+our $VERSION = '1.57';
+
 BEGIN {
-	$VERSION   = '1.57';
 	# $VERSION   = eval $VERSION;
 	@ISA       = qw{ Exporter };
 	@EXPORT_OK = qw{ remove rm clear trash };
