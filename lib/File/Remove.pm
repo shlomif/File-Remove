@@ -7,7 +7,7 @@ use warnings;
 use vars qw{ @ISA @EXPORT_OK };
 use vars qw{ $DEBUG $unlink $rmdir    };
 
-our $VERSION = '1.57';
+our $VERSION = '1.58';
 
 BEGIN {
 	# $VERSION   = eval $VERSION;

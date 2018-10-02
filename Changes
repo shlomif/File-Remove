@@ -1,5 +1,8 @@
 Revision history for Perl extension File-Remove
 
+1.58    2018-10-?? - Shlomi Fish
+    - Added [MetaJSON] to dist.ini, so releases include a META.json
+
 1.57    2016-04-24 - Shlomi Fish
     - Correct the copyright holder and year.
     - Add a test for Kwalitee and 'use warnings'.
